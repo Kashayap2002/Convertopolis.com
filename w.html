@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weight Converter</title>
+  <link rel="stylesheet" type="text/css" href="w.css">
+</head>
+<body>
+  <header>
+    <h1>Weight Converter</h1>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Converters</h2>
+      <ul>
+        <li><a href="Index.html">Length Converter</a></li>
+        <li><a href="temp.html">Temperature Converter</a></li>
+        <li><a href="vol.html">Volume Converter</a></li>
+        <li><a href="area.html">Area COnverter</a></li>
+        <li><a href="w.html">Weight Converter</a></li>
+        <li><a href="speed.html">Speed Converter</a></li>
+        <li><a href="time.html">Time Converter</a></li>
+        <li><a href="pre.html">Pressure Converter</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Unit Converter</h2>
+      <div class="converter-wrapper">
+        <table id="converter-table">
+          <tr>
+            <td>
+              <label for="value-input">Value:</label>
+            </td>
+            <td>
+              <input type="number" id="value-input" placeholder="Enter value">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-from">From:</label>
+            </td>
+            <td>
+              <select id="unit-select-from">
+                <option value="kilogram">Kilogram (kg)</option>
+                <option value="gram">Gram (g)</option>
+                <option value="milligram">Milligram (mg)</option>
+                <option value="metric-ton">Metric Ton (t)</option>
+                <option value="long-ton">Long Ton (lt)</option>
+                <option value="short-ton">Short Ton (st)</option>
+                <option value="pound">Pound (lb)</option>
+                <option value="ounce">Ounce (oz)</option>
+                <option value="carrat">Carrat (ct)</option>
+                <option value="atomic-mass-unit">Atomic Mass Unit (u)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-to">To:</label>
+            </td>
+            <td>
+              <select id="unit-select-to">
+                <option value="kilogram">Kilogram (kg)</option>
+                <option value="gram">Gram (g)</option>
+                <option value="milligram">Milligram (mg)</option>
+                <option value="metric-ton">Metric Ton (t)</option>
+                <option value="long-ton">Long Ton (lt)</option>
+                <option value="short-ton">Short Ton (st)</option>
+                <option value="pound">Pound (lb)</option>
+                <option value="ounce">Ounce (oz)</option>
+                <option value="carrat">Carrat (ct)</option>
+                <option value="atomic-mass-unit">Atomic Mass Unit (u)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="button" id="convert-button">Convert</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="result-box">
+        <h3>Result:</h3>
+        <p id="result-value"></p>
+      </div>
+    </main>
+  </div>
+
+  <script src="w.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+.container {
+display: flex;
+max-width: 960px;
+margin: 0 auto;
+padding: 20px;
+}
+
+aside {
+width: 20%;
+padding-right: 20px;
+background-color: #f5f5f5;
+margin-right: 20px;
+}
+
+aside h2 {
+margin-top: 0;
+}
+
+aside ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+aside li {
+margin-bottom: 10px;
+}
+
+main {
+flex-grow: 1;
+}
+
+h1 {
+margin-top: 0;
+}
+
+.converter-wrapper {
+border: 1px solid #ccc;
+padding: 20px;
+background-color: #f9f9f9;
+}
+
+.converter-wrapper h2 {
+margin-top: 0;
+}
+
+.converter-wrapper table {
+width: 100%;
+}
+
+.converter-wrapper td {
+padding: 5px;
+}
+
+.converter-wrapper button {
+padding: 10px 20px;
+background-color: #333;
+color: #fff;
+}
+
+.result-box {
+margin-top: 20px;
+background-color: #f5f5f5;
+padding: 20px;
+}
+
+#result-value {
+margin-top: 0;
+}

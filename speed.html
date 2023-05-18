@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speed Converter</title>
+  <link rel="stylesheet" type="text/css" href="speed.css">
+</head>
+<body>
+  <header>
+    <h1>Speed Converter</h1>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Converters</h2>
+      <ul>
+        <li><a href="Index.html">Length Converter</a></li>
+        <li><a href="temp.html">Temperature Converter</a></li>
+        <li><a href="vol.html">Volume Converter</a></li>
+        <li><a href="area.html">Area COnverter</a></li>
+        <li><a href="w.html">Weight Converter</a></li>
+        <li><a href="speed.html">Speed Converter</a></li>
+        <li><a href="time.html">Time Converter</a></li>
+        <li><a href="pre.html">Pressure Converter</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Unit Converter</h2>
+      <div class="converter-wrapper">
+        <table id="converter-table">
+          <tr>
+            <td>
+              <label for="value-input">Value:</label>
+            </td>
+            <td>
+              <input type="number" id="value-input" placeholder="Enter value">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-from">From:</label>
+            </td>
+            <td>
+              <select id="unit-select-from">
+                <option value="m/s">Meter/second (m/s)</option>
+                <option value="km/h">Kilometer/hour (km/h)</option>
+                <option value="mi/h">Mile/hour (mi/h)</option>
+                <option value="ft/s">Foot/second (ft/s)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-to">To:</label>
+            </td>
+            <td>
+              <select id="unit-select-to">
+                <option value="m/s">Meter/second (m/s)</option>
+                <option value="km/h">Kilometer/hour (km/h)</option>
+                <option value="mi/h">Mile/hour (mi/h)</option>
+                <option value="ft/s">Foot/second (ft/s)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="button" id="convert-button">Convert</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="result-box">
+        <h3>Result:</h3>
+        <p id="result-value"></p>
+      </div>
+    </main>
+  </div>
+  <script src="speed.js"></script>
+</body>
+</html>

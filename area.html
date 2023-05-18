@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Area Converter</title>
+  <link rel="stylesheet" type="text/css" href="area.css">
+</head>
+<body>
+  <header>
+    <h1>Area Converter</h1>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Converters</h2>
+      <ul>
+        <li><a href="Index.html">Length Converter</a></li>
+        <li><a href="temp.html">Temperature Converter</a></li>
+        <li><a href="vol.html">Volume Converter</a></li>
+        <li><a href="area.html">Area COnverter</a></li>
+        <li><a href="w.html">Weight Converter</a></li>
+        <li><a href="speed.html">Speed Converter</a></li>
+        <li><a href="time.html">Time Converter</a></li>
+        <li><a href="pre.html">Pressure Converter</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Unit Converter</h2>
+      <div class="converter-wrapper">
+        <table id="converter-table">
+          <tr>
+            <td>
+              <label for="value-input">Value:</label>
+            </td>
+            <td>
+              <input type="number" id="value-input" placeholder="Enter value">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-from">From:</label>
+            </td>
+            <td>
+              <select id="unit-select-from">
+                <option value="square-meter">Square Meter</option>
+                <option value="square-kilometer">Square Kilometer</option>
+                <option value="square-centimeter">Square Centimeter</option>
+                <option value="square-millimeter">Square Millimeter</option>
+                <option value="square-micrometer">Square Micrometer</option>
+                <option value="hectare">Hectare</option>
+                <option value="square-mile">Square Mile</option>
+                <option value="square-yard">Square Yard</option>
+                <option value="square-foot">Square Foot</option>
+                <option value="square-inch">Square Inch</option>
+                <option value="acre">Acre</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-to">To:</label>
+            </td>
+            <td>
+              <select id="unit-select-to">
+                <option value="square-meter">Square Meter</option>
+                <option value="square-kilometer">Square Kilometer</option>
+                <option value="square-centimeter">Square Centimeter</option>
+                <option value="square-millimeter">Square Millimeter</option>
+                <option value="square-micrometer">Square Micrometer</option>
+                <option value="hectare">Hectare</option>
+                <option value="square-mile">Square Mile</option>
+                <option value="square-yard">Square Yard</option>
+                <option value="square-foot">Square Foot</option>
+                <option value="square-inch">Square Inch</option>
+                <option value="acre">Acre</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="button" id="convert-button">Convert</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="result-box">
+ <h3>Result:</h3>
+        <p id="result-value"></p>
+      </div>
+    </main>
+  </div>
+  <script src="area.js"></script>
+</body>
+</html>

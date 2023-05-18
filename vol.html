@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Volume Converter</title>
+  <link rel="stylesheet" type="text/css" href="vol.css">
+</head>
+<body>
+  <header>
+    <h1>Volume Converter</h1>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Converters</h2>
+      <ul>
+        <li><a href="Index.html">Length Converter</a></li>
+        <li><a href="temp.html">Temperature Converter</a></li>
+        <li><a href="vol.html">Volume Converter</a></li>
+        <li><a href="area.html">Area COnverter</a></li>
+        <li><a href="w.html">Weight Converter</a></li>
+        <li><a href="speed.html">Speed Converter</a></li>
+        <li><a href="time.html">Time Converter</a></li>
+        <li><a href="pre.html">Pressure Converter</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <h2>Unit Converter</h2>
+      <div class="converter-wrapper">
+        <table id="converter-table">
+          <tr>
+            <td>
+              <label for="value-input">Value:</label>
+            </td>
+            <td>
+              <input type="number" id="value-input" placeholder="Enter value">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-from">From:</label>
+            </td>
+            <td>
+              <select id="unit-select-from">
+                <option value="cubic-meter">Cubic Meter (m³)</option>
+                <option value="cubic-kilometer">Cubic Kilometer (km³)</option>
+                <option value="cubic-centimeter">Cubic Centimeter (cm³)</option>
+                <option value="cubic-millimeter">Cubic Millimeter (mm³)</option>
+                <option value="liter">Liter (L)</option>
+                <option value="milliliter">Milliliter (mL)</option>
+                <option value="us-gallon">US Gallon (gal)</option>
+                <option value="us-quart">US Quart (qt)</option>
+                <option value="us-pint">US Pint (pt)</option>
+                <option value="us-cup">US Cup (cup)</option>
+                <option value="us-fluid-ounce">US Fluid Ounce (fl oz)</option>
+                <option value="us-table-spoon">US Table Spoon (tbsp)</option>
+                <option value="us-tea-spoon">US Tea Spoon (tsp)</option>
+                <option value="imperial-gallon">Imperial Gallon (gal)</option>
+                <option value="imperial-quart">Imperial Quart (qt)</option>
+                <option value="imperial-pint">Imperial Pint (pt)</option>
+                <option value="imperial-fluid-ounce">Imperial Fluid Ounce (fl oz)</option>
+                <option value="imperial-table-spoon">Imperial Table Spoon (tbsp)</option>
+                <option value="imperial-tea-spoon">Imperial Tea Spoon (tsp)</option>
+                <option value="cubic-mile">Cubic Mile (mi³)</option>
+                <option value="cubic-yard">Cubic Yard (yd³)</option>
+                <option value="cubic-foot">Cubic Foot (ft³)</option>
+                <option value="cubic-inch">Cubic Inch (in³)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="unit-select-to">To:</label>
+           
+            </td>
+            <td>
+              <select id="unit-select-to">
+                <option value="cubic-meter">Cubic Meter (m³)</option>
+                <option value="cubic-kilometer">Cubic Kilometer (km³)</option>
+                <option value="cubic-centimeter">Cubic Centimeter (cm³)</option>
+                <option value="cubic-millimeter">Cubic Millimeter (mm³)</option>
+                <option value="liter">Liter (L)</option>
+                <option value="milliliter">Milliliter (mL)</option>
+                <option value="us-gallon">US Gallon (gal)</option>
+                <option value="us-quart">US Quart (qt)</option>
+                <option value="us-pint">US Pint (pt)</option>
+                <option value="us-cup">US Cup (cup)</option>
+                <option value="us-fluid-ounce">US Fluid Ounce (fl oz)</option>
+                <option value="us-table-spoon">US Table Spoon (tbsp)</option>
+                <option value="us-tea-spoon">US Tea Spoon (tsp)</option>
+                <option value="imperial-gallon">Imperial Gallon (gal)</option>
+                <option value="imperial-quart">Imperial Quart (qt)</option>
+                <option value="imperial-pint">Imperial Pint (pt)</option>
+                <option value="imperial-fluid-ounce">Imperial Fluid Ounce (fl oz)</option>
+                <option value="imperial-table-spoon">Imperial Table Spoon (tbsp)</option>
+                <option value="imperial-tea-spoon">Imperial Tea Spoon (tsp)</option>
+                <option value="cubic-mile">Cubic Mile (mi³)</option>
+                <option value="cubic-yard">Cubic Yard (yd³)</option>
+                <option value="cubic-foot">Cubic Foot (ft³)</option>
+                <option value="cubic-inch">Cubic Inch (in³)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="button" id="convert-button">Convert</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="result-box">
+        <h3>Result:</h3>
+        <p id="result-value"></p>
+      </div>
+    </main>
+  </div>
+  <script src="vol.js"></script>
+</body>
+</html>

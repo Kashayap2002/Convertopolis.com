@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Convertopolis - Unit Converter</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    header nav {
+      margin-top: 5px;
+    }
+
+    .navigation ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navigation li {
+      margin-right: 20px;
+    }
+
+    .navigation li:last-child {
+      margin-right: 0;
+    }
+
+    .navigation a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .additional-content {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .additional-content h2 {
+      margin-bottom: 20px;
+    }
+
+    .additional-content p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    aside {
+      flex: 0 0 30%;
+    }
+
+    main {
+      flex: 0 0 70%;
+    }
+
+    .converter-wrapper {
+      margin-top: 20px;
+    }
+
+    .converter-wrapper table {
+      width: 100%;
+    }
+
+    .converter-wrapper td {
+      padding: 5px;
+    }
+
+    .result-box {
+      margin-top: 20px;
+    }
+
+    .result-box h3 {
+      margin-top: 0;
+    }
+
+    .result-box p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .convert-button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Convertopolis - Unit Converter</h1>
+    <nav class="navigation">
+      <ul>
+       
+        <li><a href="index.html" ><p style="color: red;", style="left: 100%;" >Home</p></a></li>
+        <li><a href="about.html" ><p style="color: red;", style="left: 100%;"  >About</p></a></li>
+        <li><a href="usermanual.html"><p style="color: red;">User Manual</p></a></li>
+        <li><a href="feed.html" ><p style="color: red;", style="left: 100%;" >Feedback</p></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Converters</h2>
+      <ul>
+        <li><a href="Index.html">Length Converter</a></li>
+        <li><a href="temp.html">Temperature Converter</a></li>
+        <li><a href="vol.html">Volume Converter</a></li>
+        <li><a href="area.html">Area Converter</a></li>
+        <li><a href="w.html">Weight Converter</a></li>
+        <li><a href="speed.html">Speed Converter</a></li>
+        <li><a href="time.html">Time Converter</a></li>
+        <li><a href="pre.html">Pressure Converter</a></li>
+        </ul>
+      </aside>
+  
+      <main>
+        <h2>Unit Converter</h2>
+        <div class="converter-wrapper">
+          <table id="converter-table">
+            <tr>
+              <td>
+                <label for="value-input">Value:</label>
+              </td>
+              <td>
+                <input type="number" id="value-input" placeholder="Enter value">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="unit-select-from">From:</label>
+              </td>
+              <td>
+                <select id="unit-select-from">
+                  <option value="mm">Millimeter (mm)</option>
+                  <option value="cm">Centimeter (cm)</option>
+                  <option value="m">Meter (m)</option>
+                  <option value="km">Kilometer (km)</option>
+                  <option value="in">Inch (in)</option>
+                  <option value="ft">Foot (ft)</option>
+                  <option value="yd">Yard (yd)</option>
+                  <option value="mi">Mile (mi)</option>
+                  <option value="nmi">Nautical Mile (nmi)</option>
+                  <option value="au">Astronomical Unit (AU)</option>
+                  <option value="ly">Light-year (ly)</option>
+                  <option value="pc">Parsec (pc)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="unit-select-to">To:</label>
+              </td>
+              <td>
+                <select id="unit-select-to">
+                  <option value="mm">Millimeter (mm)</option>
+                  <option value="cm">Centimeter (cm)</option>
+                  <option value="m">Meter (m)</option>
+                  <option value="km">Kilometer (km)</option>
+                  <option value="in">Inch (in)</option>
+                  <option value="ft">Foot (ft)</option>
+                  <option value="yd">Yard (yd)</option>
+                  <option value="mi">Mile (mi)</option>
+                  <option value="nmi">Nautical Mile (nmi)</option>
+                  <option value="au">Astronomical Unit (AU)</option>
+                  <option value="ly">Light-year (ly)</option>
+                  <option value="pc">Parsec (pc)</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="submit" class="convert-button">Convert</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="result-box">
+          <h3>Result:</h3>
+          <p id="result-value"></p>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
+  
